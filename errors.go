@@ -25,8 +25,7 @@ func UnwrapJavaScriptException(err error) error {
 			}
 
 		default:
-			// This will work only if it's the *current* Go error in the runtime
-			return UnwrapJavaScriptException(exception)
+			return errors.New(util.ToString(exported))
 		}
 	}
 

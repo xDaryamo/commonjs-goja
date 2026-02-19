@@ -1,6 +1,6 @@
 module github.com/tliron/commonjs-goja
 
-go 1.25.1
+go 1.26.0
 
 require (
 	github.com/beevik/etree v1.6.0
